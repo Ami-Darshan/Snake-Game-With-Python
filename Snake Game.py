@@ -128,6 +128,7 @@ while True:
         snake_pos[0] += 10
 
     # Snake body growing mechanism
+    # pdl--darshan
     snake_body.insert(0, list(snake_pos))
     if snake_pos[0] == food_pos[0] and snake_pos[1] == food_pos[1]:
         score += 1
@@ -152,6 +153,7 @@ while True:
     pygame.draw.rect(game_window, white, pygame.Rect(food_pos[0], food_pos[1], 10, 10))
 
     # Game Over conditions
+    # darshan poudel
     # Getting out of bounds
     if snake_pos[0] < 0 or snake_pos[0] > frame_size_x-10:
         game_over()
